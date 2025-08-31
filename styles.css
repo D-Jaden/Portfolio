@@ -99,8 +99,6 @@ body {
     position: fixed;
     top: 2rem;
     left: 50%;
-    height:2rem;
-    width:8rem;
     transform: translateX(-50%);
     border-radius: 15px;
     border: 3px solid rgb(69, 176, 244);
