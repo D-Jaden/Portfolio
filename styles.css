@@ -266,7 +266,7 @@ header {
 
 .about .box {
     position: absolute;
-    bottom: 18rem;
+    bottom: 17rem;
     display: inline-block;
     background: linear-gradient(45deg,rgb(18, 147, 212), rgb(45, 124, 214) );
     /*border: 4px solid rgb(255, 255, 255);*/
