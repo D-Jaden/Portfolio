@@ -210,7 +210,7 @@ header {
   color:  rgb(59, 125, 200); 
   white-space: nowrap; 
   position: relative;
-  left:35rem;
+  left:30rem;
 }
 
 .scramble-text::before {
