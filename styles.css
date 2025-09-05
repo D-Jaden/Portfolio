@@ -2,6 +2,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 * {
@@ -14,7 +15,7 @@ body {
     background-color: rgb(255, 251, 248);
     font-family: 'Bebas Neue', sans-serif;
     color: rgb(255, 255, 255);
-    overflow-x: hidden; 
+    overflow-x: hidden !important; 
     line-height: 1.6;
     width: 100%; 
 }
@@ -160,16 +161,15 @@ header {
 /* ABOUT SECTION */
 /*=======================*/
 
-
 .about-section {
-    padding: 9.375rem 10% 6.25rem; /* 150px 100px to rem */
+    padding: 9.375rem 10% 6.25rem;
     text-align: left;
 }
 
 .about h2 {
     font-family: 'Bebas Neue';
-    font-size: clamp(3.5rem, 8vw, 7rem); /* Made more responsive */
-    margin-bottom: 2.5rem; /* 40px to rem */
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    margin-bottom: 2.5rem;
     background: linear-gradient(45deg, rgb(18, 147, 212), rgb(45, 124, 214), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,7 +178,7 @@ header {
 
 .about span {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(2rem, 3vw, 4rem); /* Made more responsive */
+    font-size: clamp(2rem, 3vw, 4rem);
     color: #000000;
     max-width: 800px;
     margin: 0 auto;
@@ -197,7 +197,7 @@ header {
 
 .about .cursor {
     font-family: 'WDXL Lubrifont TC', sans-serif;
-    font-size: clamp(2rem, 4vw, 4rem); /* Made more responsive */
+    font-size: clamp(2rem, 4vw, 4rem);
     color: #000000;
     position: absolute;
     top: 17rem;
@@ -215,12 +215,12 @@ header {
 
 .about .text {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: clamp(2rem, 5vw, 6rem); /* Made more responsive */
+    font-size: clamp(2rem, 5vw, 6rem);
 }
 
 .about p {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(1.3rem, 2vw, 2rem); /* Made more responsive */
+    font-size: clamp(1.375rem, 2vw, 2.2rem);
     color: rgb(0, 0, 0);
 }
 
@@ -244,6 +244,13 @@ header {
 /*=================================*/
 /* HORIZONTAL SCROLLING - DESKTOP ONLY */
 /*=================================*/
+
+.horizontal-container,
+.horizontal-wrapper,
+.horizontal-content {
+    overflow-x: hidden !important;  /* Hide overflow in horizontal section */
+    width: 100vw;
+}
 
 .horizontal-wrapper::-webkit-scrollbar {
     display: none;
@@ -602,7 +609,7 @@ header {
 .photo-content {
     position: absolute;
     bottom: 2px;
-    left: 24.5%;
+    left: 26.5%;
     transform: translateX(-50%);
     width: min(62.5rem, 90%);
     text-align: center;
@@ -936,13 +943,13 @@ footer {
 @media (max-width: 768px) {
     html {
         font-size: 14px;
+        overflow-x: hidden !important;
     }
     
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     
-    /* Navigation fixes */
     .navigation-bar {
         top: 1rem;
         border-radius: 10px;
@@ -1062,7 +1069,12 @@ footer {
     /*=================================*/
     /* HORIZONTAL SCROLLING - MOBILE VERTICAL LAYOUT */
     /*=================================*/
-    
+    .horizontal-container,
+    .horizontal-wrapper,
+    .horizontal-content {
+        overflow-x: hidden !important;
+        width: 100vw;
+    }
     /* Disable horizontal scrolling on mobile */
     .horizontal-container {
         height: auto;
@@ -1081,13 +1093,15 @@ footer {
         height: auto;
         width: 100%;
         transform: none !important;
+        display: flex;  
+        flex-direction: column;
     }
 
     .panel {
-        width: 100vw;
-        min-width: 100vw;
-        height: 100vh;
-        min-height: 100vh;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: auto;
         padding: 2rem 5%;
         box-sizing: border-box;
         display: flex;
@@ -1145,7 +1159,7 @@ footer {
     /* Skills grid mobile */
     .skills-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
         max-width: 100%;
         padding: 0 0.5rem;
@@ -1263,30 +1277,31 @@ footer {
         line-height: 1.4;
     }
 
-    /* Contact fixes */
-    .contact-section {
-        padding: 3rem 5%;
-    }
-
     .contact-section h2 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
 
+    .contact-section {
+        padding: 3rem 5%;
+        min-height: 100vh;  /* Ensure it takes full viewport height */
+        position: relative;  /* Fix positioning issues */
+        z-index: 10;  /* Bring it above other elements */
+        overflow: visible !important;  /* Prevent clipping */
+    }
+
     .contact-info {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 0 0.5rem;
+        width: 100%;  /* Ensure full width */
+        padding: 0;  /* Remove extra padding that might cause overflow */
     }
 
     .contact-item {
-        width: 100%;
-        max-width: 300px;
-        padding: 1rem;
-        box-sizing: border-box;
-        min-width: unset;
+        width: 90%;  /* Slightly narrower to avoid edges */
+        max-width: none;
+        margin: 0 auto;  /* Center properly */
     }
 
     .contact-item h3 {
@@ -1406,6 +1421,7 @@ footer {
 @media (max-width: 480px) {
     html {
         font-size: 12px;
+        overflow-x: hidden !important;
     }
     
     .navigation-bar {
@@ -1448,6 +1464,12 @@ footer {
         font-size: 0.7rem;
     }
 
+    .horizontal-content {
+        display: flex;  /* Change from block to flex for better control */
+        flex-direction: column;  /* Stack vertically */
+        width: 100%;  /* Override max-content */
+        height: auto;
+    }
     .image-container img {
         width: 70vw;
         max-width: 200px;
