@@ -19,7 +19,7 @@ body {
 }
 
 /*=================================*/
-/* NAVIGATION BAR*/
+/* NAVIGATION BAR - Improved border radius */
 /*=================================*/
 
 .navigation-bar {
@@ -28,7 +28,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 500px;
-    border: 0.2vw solid transparent; /* Prepare for gradient border */
+    border: 0.2vw solid transparent;
     background: 
         linear-gradient(white, white) padding-box,
         linear-gradient(75deg, #0fcfff, #1466ff) border-box;
@@ -51,8 +51,8 @@ nav li {
 nav a {
     color: rgb(18, 121, 255);
     text-decoration: none;
-    padding: 0.75rem 1.25rem; /* Converted to rem */
-    font-size: 1.4rem; /* Keep in rem */
+    padding: 0.75rem 1.25rem;
+    font-size: 1.4rem;
     transition: all 0.4s ease;
     border-radius: 10px;
     position: relative;
@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 /*=================================*/
-/* HERO SECTION - Converted to responsive units */
+/* HERO SECTION */
 /*=================================*/
 
 #home {
@@ -80,7 +80,7 @@ nav a:hover {
 
 header {
     text-align: center;
-    padding: 6.25rem 0; /* 100px to rem */
+    padding: 6.25rem 0;
     position: relative;
     z-index: 10;
 }
@@ -89,13 +89,13 @@ header {
     font-family: "Bebas Neue";
     font-style: oblique 13deg;
     color: rgb(18, 121, 255);
-    font-size: clamp(4rem, 7vw, 7rem); /* Made more responsive */
+    font-size: clamp(4rem, 7vw, 7rem);
     overflow: hidden;
     opacity: 0;
     line-height: 1.1;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 3.75rem; /* 60px to rem */
+    margin-bottom: 3.75rem;
     text-shadow: 0 0 30px rgb(255, 255, 255);
     position: relative;
     top: 2rem;
@@ -117,34 +117,34 @@ header {
 .image-container img {
     max-width: 100%;
     height: auto;
-    width: clamp(18.75rem, 40vw, 31.25rem); /* Made responsive */
+    width: clamp(18.75rem, 40vw, 31.25rem);
 }
 
 /*=======================*/
-/* SCRAMBLE TEXT - Converted to rem */
+/* SCRAMBLE TEXT */
 /*=======================*/
 
 .scramble-wrapper {
-    display: flex; /* ✅ CHANGED: from 'display: inline-block' */
-    justify-content: center; /* ✅ ADDED */
-    align-items: center; /* ✅ ADDED */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%; /* ✅ ADDED */
-    padding: 0 5%; /* ✅ ADDED */
-    margin: 2rem 0; /* ✅ ADDED */
+    width: 100%;
+    padding: 0 5%;
+    margin: 2rem 0;
 }
 
 .scramble-text {
     font-family: 'DotGothic16';
-    font-size: clamp(2rem, 5vw, 5rem); /* ✅ CHANGED: from fixed 5rem */
+    font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 800;
     text-transform: uppercase;
     color: rgb(59, 125, 200);
     white-space: nowrap;
-    position: static; /* ✅ CHANGED: from 'position: relative; left: 35rem' */
-    text-align: center; /* ✅ ADDED */
-    max-width: 100%; /* ✅ ADDED */
-    overflow: hidden; /* ✅ ADDED */
+    position: static;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .scramble-text::before {
@@ -156,18 +156,18 @@ header {
 }
 
 /*=======================*/
-/* ABOUT SECTION - Converted to rem */
+/* ABOUT SECTION */
 /*=======================*/
 
 .about-section {
-    padding: 9.375rem 10% 6.25rem; /* 150px 100px to rem */
+    padding: 9.375rem 10% 6.25rem;
     text-align: left;
 }
 
 .about h2 {
     font-family: 'Bebas Neue';
-    font-size: clamp(3.5rem, 8vw, 7rem); /* Made more responsive */
-    margin-bottom: 2.5rem; /* 40px to rem */
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    margin-bottom: 2.5rem;
     background: linear-gradient(45deg, rgb(18, 147, 212), rgb(45, 124, 214), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -176,7 +176,7 @@ header {
 
 .about span {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(2rem, 3vw, 4rem); /* Made more responsive */
+    font-size: clamp(2rem, 3vw, 4rem);
     color: #000000;
     max-width: 800px;
     margin: 0 auto;
@@ -195,7 +195,7 @@ header {
 
 .about .cursor {
     font-family: 'WDXL Lubrifont TC', sans-serif;
-    font-size: clamp(2rem, 4vw, 4rem); /* Made more responsive */
+    font-size: clamp(2rem, 4vw, 4rem);
     color: #000000;
     position: absolute;
     top: 17rem;
@@ -213,22 +213,22 @@ header {
 
 .about .text {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: clamp(2rem, 5vw, 6rem); /* Made more responsive */
+    font-size: clamp(2rem, 5vw, 6rem);
 }
 
 .about p {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(1.375rem, 2vw, 2.2rem); /* Made more responsive */
+    font-size: clamp(1.375rem, 2vw, 2.2rem);
     color: rgb(0, 0, 0);
 }
 
 /*==============================*/
-/* HIGHLIGHT - Converted to rem */
+/* HIGHLIGHT */
 /*==============================*/
 
 .text-highlight {
     background-color: transparent;
-    padding: 0.1875rem 0.375rem; /* 3px 6px to rem */
+    padding: 0.1875rem 0.375rem;
     border-radius: 3px;
     border: 3px solid #fff;
     display: inline-block;
@@ -240,7 +240,7 @@ header {
 }
 
 /*=================================*/
-/* HORIZONTAL SCROLLING - Fixed overflow issue */
+/* HORIZONTAL SCROLLING - DESKTOP ONLY */
 /*=================================*/
 
 .horizontal-wrapper::-webkit-scrollbar {
@@ -250,51 +250,49 @@ header {
 .horizontal-container {
     position: relative;
     height: 100vh;
-    overflow: hidden; /* ✅ CHANGED: from 'overflow: hidden' - Prevent any overflow */
-    width: 100%; /* ✅ ADDED */
+    overflow: hidden;
+    width: 100%;
 }
 
 .horizontal-wrapper {
     position: sticky;
     top: 0;
     height: 100vh;
-    overflow: hidden; /* ✅ ADDED: Prevent scrollbars */
-    width: 100%; /* ✅ ADDED */
+    overflow: hidden;
+    width: 100%;
 }
 
 .horizontal-content {
     display: flex;
     height: 100vh;
     will-change: transform;
-    width: max-content; /* ✅ CHANGED: from no width constraint - Only as wide as content needs */
+    width: max-content;
 }
 
 .panel {
     min-width: 80vw;
-    width: 80vw; /* ✅ ADDED: Consistent width */
+    width: 80vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     flex-shrink: 0;
-    overflow: hidden; /* ✅ ADDED: Prevent content overflow */
+    overflow: hidden;
 }
-
-/* Panel background styles remain the same */
 
 .panel-content {
     text-align: center;
     max-width: 800px;
-    padding: 0 2.5rem; /* 40px to rem */
+    padding: 0 2.5rem;
     transform: translateY(50px);
     opacity: 0;
 }
 
 .panel-title {
     font-family: 'Bodoni Moda', serif;
-    font-size: clamp(2.5rem, 8vw, 6rem); /* Made more responsive */
-    margin-bottom: 1.25rem; /* 20px to rem */
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    margin-bottom: 1.25rem;
     background: linear-gradient(45deg, #ffffff, #f8f9fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -304,18 +302,18 @@ header {
 }
 
 .panel-subtitle {
-    font-size: clamp(1.25rem, 3vw, 3rem); /* Made more responsive */
+    font-size: clamp(1.25rem, 3vw, 3rem);
     color: #ffffff;
-    margin-bottom: 2.5rem; /* 40px to rem */
+    margin-bottom: 2.5rem;
     letter-spacing: 3px;
 }
 
 .panel-description p {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.5rem); /* Made more responsive */
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: #ffffff;
     line-height: 1.6;
-    margin-bottom: 1.25rem; /* 20px to rem */
+    margin-bottom: 1.25rem;
 }
 
 .panel-1 {
@@ -351,25 +349,22 @@ header {
 }
 
 .panel-5 {
-    background: linear-gradient(90deg,
-            rgb(53, 87, 222),
-            rgb(48, 91, 172));
+    background: linear-gradient(90deg, rgb(53, 87, 222), rgb(48, 91, 172));
 }
 
 .vertical-transition-container {
     position: relative;
-    background: linear-gradient(180deg,
-            rgb(53, 87, 222),
-            rgba(102, 154, 180));
+    background: linear-gradient(180deg, rgb(53, 87, 222), rgba(102, 154, 180));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .text-highlight-desc {
     background-color: transparent;
     color: white;
-    padding: 0.1875rem 0.375rem; /* 3px 6px to rem */
+    padding: 0.1875rem 0.375rem;
     border-radius: 5px;
     display: inline-block;
     will-change: transform, background-color;
@@ -382,17 +377,17 @@ header {
 .project-tags {
     display: flex;
     justify-content: center;
-    gap: 0.9375rem; /* 15px to rem */
+    gap: 0.9375rem;
     flex-wrap: wrap;
-    margin-top: 1.875rem; /* 30px to rem */
+    margin-top: 1.875rem;
 }
 
 .tag {
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    padding: 1.25rem 1.875rem; /* 20px 30px to rem */
+    padding: 1.25rem 1.875rem;
     border-radius: 25px;
-    font-size: 1.3rem; /* Keep in rem */
+    font-size: 1.3rem;
     font-weight: 500;
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -405,15 +400,15 @@ header {
 }
 
 /*=================================*/
-/* SKILLS GRID - Converted to rem */
+/* SKILLS GRID */
 /*=================================*/
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* 120px to rem */
-    gap: 1.25rem; /* 20px to rem */
-    margin-top: 2.5rem; /* 40px to rem */
-    max-width: 37.5rem; /* 600px to rem */
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    max-width: 37.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -422,8 +417,8 @@ header {
     background: rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    padding: 1.25rem 0.9375rem; /* 20px 15px to rem */
-    font-size: 1.8rem; /* Keep in rem */
+    padding: 1.25rem 0.9375rem;
+    font-size: 1.8rem;
     transition: all 0.2s ease;
     backdrop-filter: blur(10px);
     color: rgb(18, 121, 255);
@@ -441,34 +436,34 @@ header {
 }
 
 /*=================================*/
-/* PHILOSOPHY - Converted to rem */
+/* PHILOSOPHY */
 /*=================================*/
 
 .philosophy-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); /* 200px to rem */
-    gap: 1.875rem; /* 30px to rem */
-    margin-top: 2.5rem; /* 40px to rem */
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 1.875rem;
+    margin-top: 2.5rem;
 }
 
 .principle {
     background: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.294);
     border-radius: 15px;
-    padding: 1.5625rem 1.25rem; /* 25px 20px to rem */
+    padding: 1.5625rem 1.25rem;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .principle h4 {
-    font-size: 1.8rem; /* Keep in rem */
+    font-size: 1.8rem;
     color: rgb(18, 121, 255);
-    margin-bottom: 0.9375rem; /* 15px to rem */
+    margin-bottom: 0.9375rem;
 }
 
 .principle p {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.3rem; /* Keep in rem */
+    font-size: 1.3rem;
     color: #000000;
     line-height: 1.4;
 }
@@ -486,24 +481,22 @@ header {
 }
 
 /*=================================*/
-/* VERTICAL TRANSITION - Fixed positioning */
+/* VERTICAL TRANSITION */
 /*=================================*/
 
 .vertical-transition-container {
     position: relative;
-    background: linear-gradient(180deg,
-            rgb(53, 87, 222),
-            rgba(102, 154, 180));
+    background: linear-gradient(180deg, rgb(53, 87, 222), rgba(102, 154, 180));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Ensure it doesn't cause overflow */
+    width: 100%;
 }
 
 .panel-6 {
     width: 100%;
-    height: 100vh; /* Changed from 300vh to prevent excessive scrolling */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,7 +518,7 @@ header {
 }
 
 /*=================================*/
-/* PHOTOGRAPHS - Made responsive */
+/* PHOTOGRAPHS */
 /*=================================*/
 
 .photography-section {
@@ -540,8 +533,8 @@ header {
 }
 
 .photography-title {
-    font-size: clamp(2.5rem, 8vw, 12rem); /* Made more responsive */
-    margin-bottom: 1.875rem; /* 30px to rem */
+    font-size: clamp(2.5rem, 8vw, 12rem);
+    margin-bottom: 1.875rem;
     background: linear-gradient(45deg, #4d59ff, #44f9ff, #4da6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -552,7 +545,7 @@ header {
 }
 
 .photography-subtitle {
-    font-size: clamp(1rem, 3vw, 2.5rem); /* Made more responsive */
+    font-size: clamp(1rem, 3vw, 2.5rem);
     color: #666;
     font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: 2px;
@@ -566,22 +559,22 @@ header {
 }
 
 .photo-panel {
-    height: 100vh; /* Changed from 110vh to prevent excessive scrolling */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background: #fff;
-    padding: 3.75rem 1.25rem; /* 60px 20px to rem */
+    padding: 3.75rem 1.25rem;
     width: 100%;
 }
 
 .photo-panel-inner {
     position: relative;
-    width: 90%; /* Changed from fixed 1000px to percentage */
-    max-width: 62.5rem; /* 1000px to rem */
+    width: 90%;
+    max-width: 62.5rem;
     height: auto;
-    aspect-ratio: 10/9; /* Maintain original aspect ratio */
+    aspect-ratio: 10/9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -589,7 +582,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    padding: 1.25rem; /* 20px to rem */
+    padding: 1.25rem;
 }
 
 .photo-image {
@@ -606,9 +599,9 @@ header {
 
 .photo-content {
     position: absolute;
-    bottom: 2px; /* 2px to rem */
-    left: 26.5%; /* ✅ CHANGED: from 'left: 560px' */
-    transform: translateX(-50%); /* ✅ ADDED: Center horizontally */
+    bottom: 2px;
+    left: 26.5%;
+    transform: translateX(-50%);
     width: min(62.5rem, 90%);
     text-align: center;
     opacity: 0;
@@ -616,7 +609,7 @@ header {
     transition: all 0.8s ease;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    padding: 1.875rem; /* 30px to rem */
+    padding: 1.875rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -627,8 +620,8 @@ header {
 }
 
 .photo-content h3 {
-    font-size: clamp(1.5rem, 4vw, 4rem); /* Made more responsive */
-    margin-bottom: 0.9375rem; /* 15px to rem */
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    margin-bottom: 0.9375rem;
     background: linear-gradient(45deg, #333, #666);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -638,7 +631,7 @@ header {
 }
 
 .photo-content p {
-    font-size: clamp(0.875rem, 1.5vw, 1.5rem); /* Made more responsive */
+    font-size: clamp(0.875rem, 1.5vw, 1.5rem);
     color: #555;
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 1.6;
@@ -647,22 +640,22 @@ header {
 }
 
 /*=================================*/
-/* TIMELINE - Converted to rem */
+/* TIMELINE */
 /*=================================*/
 
 .experience-map {
-    padding: 9.375rem 10% 6.25rem; /* 150px 100px to rem */
+    padding: 9.375rem 10% 6.25rem;
     background: linear-gradient(180deg, rgb(18, 121, 255, 0.711), rgb(255, 255, 255, 0.711), rgba(18, 121, 255, 0.711), rgb(255, 255, 255, 0.711));
     position: relative;
     z-index: 10;
-    width: 100%; /* Ensure it doesn't cause overflow */
+    width: 100%;
 }
 
 .map-title {
     text-align: center;
-    font-size: clamp(2.5rem, 8vw, 8rem); /* Made more responsive */
+    font-size: clamp(2.5rem, 8vw, 8rem);
     color: white;
-    margin-bottom: 6.25rem; /* 100px to rem */
+    margin-bottom: 6.25rem;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
     background: white;
     -webkit-background-clip: text;
@@ -672,7 +665,7 @@ header {
 
 .timeline {
     position: relative;
-    max-width: 75rem; /* 1200px to rem */
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -691,7 +684,7 @@ header {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 6.25rem; /* 100px to rem */
+    margin-bottom: 6.25rem;
     opacity: 0;
     transform: translateY(50px);
 }
@@ -708,7 +701,7 @@ header {
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 2.5rem; /* 40px to rem */
+    padding: 2.5rem;
     position: relative;
     backdrop-filter: blur(15px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -760,40 +753,40 @@ header {
 }
 
 .timeline-year {
-    font-size: 2.8rem; /* Keep in rem */
+    font-size: 2.8rem;
     color: rgb(0, 110, 253);
-    margin-bottom: 0.9375rem; /* 15px to rem */
+    margin-bottom: 0.9375rem;
     font-weight: bold;
 }
 
 .timeline-title {
-    font-size: 2.2rem; /* Keep in rem */
+    font-size: 2.2rem;
     color: rgb(18, 121, 255);
-    margin-bottom: 1.25rem; /* 20px to rem */
+    margin-bottom: 1.25rem;
 }
 
 .timeline-description {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.4rem; /* Keep in rem */
+    font-size: 1.4rem;
     color: #000000;
     line-height: 1.7;
 }
 
 /*=================================*/
-/* CONTACT - Converted to rem */
+/* CONTACT */
 /*=================================*/
 
 .contact-section {
-    padding: 9.375rem 10%; /* 150px to rem */
+    padding: 9.375rem 10%;
     text-align: center;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(18, 121, 255, 0.341);
-    width: 100%; /* Ensure it doesn't cause overflow */
+    width: 100%;
 }
 
 .contact-section h2 {
-    font-size: clamp(2rem, 6vw, 6rem); /* Made more responsive */
-    margin-bottom: 1.875rem; /* 30px to rem */
+    font-size: clamp(2rem, 6vw, 6rem);
+    margin-bottom: 1.875rem;
     color: rgb(18, 121, 255);
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
@@ -801,7 +794,7 @@ header {
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 3.75rem; /* 60px to rem */
+    gap: 3.75rem;
     flex-wrap: wrap;
 }
 
@@ -809,20 +802,20 @@ header {
     background: rgb(255, 255, 255);
     border: 1px solid rgb(18, 121, 255);
     border-radius: 20px;
-    padding: 2.5rem 1.875rem; /* 40px 30px to rem */
-    min-width: 17.5rem; /* 280px to rem */
+    padding: 2.5rem 1.875rem;
+    min-width: 17.5rem;
     transition: all 0.4s ease;
     backdrop-filter: blur(10px);
 }
 
 .contact-item h3 {
-    font-size: 2.2rem; /* Keep in rem */
-    margin-bottom: 1.25rem; /* 20px to rem */
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
     color: rgb(18, 121, 255);
 }
 
 .contact-item p {
-    font-size: 1.6rem; /* Keep in rem */
+    font-size: 1.6rem;
     color: rgb(18, 121, 255);
     font-family: 'Helvetica Neue', sans-serif;
 }
@@ -849,27 +842,27 @@ a {
 }
 
 /*=================================*/
-/* FOOTER - Converted to rem */
+/* FOOTER */
 /*=================================*/
 footer {
     text-align: center;
-    padding: 3.75rem 0; /* 60px to rem */
-    font-size: 1.5rem; /* Keep in rem */
+    padding: 3.75rem 0;
+    font-size: 1.5rem;
     color: rgb(0, 110, 255);
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: 1px solid rgb(63, 146, 255);
-    width: 100%; /* Ensure it doesn't cause overflow */
+    width: 100%;
 }
 
 /*=================================*/
-/* DECORATIVE ELEMENT - Made responsive */
+/* DECORATIVE ELEMENT */
 /*=================================*/
 
 .decorative-element {
     position: fixed;
-    width: min(31.25rem, 80vw); /* 500px to rem with max */
-    height: min(31.25rem, 80vw); /* 500px to rem with max */
+    width: min(31.25rem, 80vw);
+    height: min(31.25rem, 80vw);
     background: radial-gradient(circle, rgba(254, 238, 8, 0.6) 0%, rgba(255, 255, 255, 0) 69%);
     top: 20%;
     left: 1%;
@@ -879,8 +872,8 @@ footer {
 
 .decorative-element-2 {
     position: fixed;
-    width: min(25rem, 60vw); /* 400px to rem with max */
-    height: min(25rem, 60vw); /* 400px to rem with max */
+    width: min(25rem, 60vw);
+    height: min(25rem, 60vw);
     background: radial-gradient(circle, rgba(0, 101, 196, 0.5) 0%, rgba(0, 68, 255, 0) 69%);
     bottom: 10%;
     right: 5%;
@@ -889,19 +882,16 @@ footer {
 }
 
 @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0px) rotate(0deg);
     }
-
     50% {
         transform: translateY(-30px) rotate(5deg);
     }
 }
 
 /*=================================*/
-/* CUBE SECTION - Made responsive */
+/* CUBE SECTION */
 /*=================================*/
 .pov {
     width: 100%;
@@ -910,13 +900,13 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 0; /* Changed from 100rem to fix positioning */
+    bottom: 0;
 }
 
 .die {
-    width: 6.25rem; /* 100px to rem */
-    height: 6.875rem; /* 110px to rem */
-    padding-bottom: 0.625rem; /* 10px to rem */
+    width: 6.25rem;
+    height: 6.875rem;
+    padding-bottom: 0.625rem;
     perspective: 1000px;
 }
 
@@ -939,14 +929,15 @@ footer {
 }
 
 /*=================================*/
-/* MOBILE SPECIFIC STYLES - Updated for responsiveness */
+/* MOBILE SPECIFIC STYLES */
 /*=================================*/
 @media (max-width: 768px) {
     html {
-        font-size: 14px; /* Adjust base font size for mobile */
+        font-size: 14px;
     }
+    
     body {
-        overflow-x: hidden; /* ✅ REINFORCED: Extra protection */
+        overflow-x: hidden;
     }
     
     /* Navigation fixes */
@@ -1016,12 +1007,12 @@ footer {
 
     /* About section fixes */
     .about-section {
-        padding: 3.75rem 5% 2.5rem; /* 60px 40px to rem */
+        padding: 3.75rem 5% 2.5rem;
     }
 
     .about h2 {
         font-size: 3rem;
-        margin-bottom: 1.25rem; /* 20px to rem */
+        margin-bottom: 1.25rem;
     }
 
     .about span {
@@ -1037,9 +1028,9 @@ footer {
         transform: none;
         color: #ffffff;
         background: linear-gradient(45deg, rgb(18, 147, 212), rgb(45, 124, 214));
-        padding: 0.1875rem 0.5rem; /* 3px 8px to rem */
+        padding: 0.1875rem 0.5rem;
         border-radius: 5px;
-        margin-right: 0.5rem; /* 8px to rem */
+        margin-right: 0.5rem;
     }
 
     .about .box {
@@ -1061,59 +1052,127 @@ footer {
     }
 
     .about p {
-        font-size: 0.675rem; /* 14px equivalent */
-        margin-top: 0.625rem; /* 10px to rem */
+        font-size: 0.675rem;
+        margin-top: 0.625rem;
         line-height: 1.4;
     }
-    .panel {
-        width: 100vw; /* ✅ CHANGED: from 'min-width: 100%' */
-        min-width: 100vw; /* ✅ UPDATED */
-        padding: 0 5%;
-        box-sizing: border-box;
+
+    /*=================================*/
+    /* HORIZONTAL SCROLLING - MOBILE VERTICAL LAYOUT */
+    /*=================================*/
+    
+    /* Disable horizontal scrolling on mobile */
+    .horizontal-container {
+        height: auto;
+        overflow: visible;
+        position: static;
     }
-    .panel-title {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
+
+    .horizontal-wrapper {
+        position: static;
+        height: auto;
+        overflow: visible;
+    }
+
+    .horizontal-content {
+        display: block;
+        height: auto;
+        width: 100%;
+        transform: none !important;
+    }
+
+    .panel {
+        width: 100vw;
+        min-width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        padding: 2rem 5%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin: 0;
+    }
+
+    .panel-content {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
         text-align: center;
+        transform: none;
+        opacity: 1;
+        position: static;
+    }
+
+    .panel-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 1.2;
     }
 
     .panel-subtitle {
-        font-size: 0.6rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
         text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .panel-description p {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-tags {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
     }
 
     .tag {
-        font-size: 0.8rem;
-        padding: 0.3rem 0.5rem;
-        border-radius: 4px;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+        border-radius: 15px;
+        margin: 0.2rem;
     }
 
-    /* Skills grid fixes */
+    /* Skills grid mobile */
     .skills-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
         max-width: 100%;
         padding: 0 0.5rem;
+        margin-top: 1rem;
     }
 
     .skill-item {
-        padding: 0.5rem;
-        font-size: 0.75rem;
+        padding: 0.7rem 0.3rem;
+        font-size: 0.6rem;
         text-align: center;
+        border-radius: 8px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* Philosophy fixes */
+    /* Philosophy mobile */
     .philosophy-content {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 0 0.5rem;
+        margin-top: 1rem;
     }
 
     .principle {
         padding: 1rem;
+        border-radius: 10px;
     }
 
     .principle h4 {
@@ -1126,7 +1185,40 @@ footer {
         line-height: 1.4;
     }
 
+    /* Vertical transition mobile */
+    .vertical-transition-container {
+        height: 100vh;
+        width: 100%;
+        padding: 2rem 5%;
+        box-sizing: border-box;
+    }
+
+    .panel-6 {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 5%;
+    }
+
+    .panel-6 .panel-content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .panel-inner-center {
+        width: 100%;
+        text-align: center;
+    }
+
     /* Timeline fixes */
+    .experience-map {
+        padding: 3rem 5% 2rem;
+    }
+
+    .map-title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
     .timeline::before {
         left: 1rem;
         width: 2px;
@@ -1144,6 +1236,10 @@ footer {
         width: 15px;
         height: 15px;
         transform: translateY(-50%);
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
     }
 
     .timeline-content::before {
@@ -1166,6 +1262,15 @@ footer {
     }
 
     /* Contact fixes */
+    .contact-section {
+        padding: 3rem 5%;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -1179,6 +1284,7 @@ footer {
         max-width: 300px;
         padding: 1rem;
         box-sizing: border-box;
+        min-width: unset;
     }
 
     .contact-item h3 {
@@ -1193,19 +1299,28 @@ footer {
 
     /* Photography fixes */
     .photo-panel {
-        height: auto;
+        height: 80vh;
+        min-height: 400px;
         padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .photo-panel-inner {
         width: 100%;
-        height: 30vh;
-        max-height: 250px;
+        height: 60%;
+        max-height: 300px;
         padding: 0.5rem;
         box-sizing: border-box;
+        aspect-ratio: 4/3;
+    }
+
+    .photo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .photo-content {
@@ -1214,21 +1329,32 @@ footer {
         padding: 1rem;
         margin-top: 1rem;
         transform: none;
+        opacity: 1;
+    }
+
+    .photo-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .photo-content p {
+        font-size: 0.9rem;
     }
 
     /* Cube fixes */
     .pov {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        bottom: 100rem;
+        bottom: 0;
     }
+
     .die {
-        width: 100px;
-        height: 410px;
+        width: 80px;
+        height: 300px;
         position: relative;
         padding-bottom: 10px;
         perspective: 1000px;
@@ -1245,7 +1371,7 @@ footer {
     }
 
     .face {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         width: 100%;
         height: 500%;
         display: flex;
@@ -1260,40 +1386,52 @@ footer {
         display: none;
     }
     
+    footer {
+        padding: 2rem 5%;
+    }
+
     footer p {
         font-size: 0.8rem;
+        margin: 0.2rem 0;
+    }
+
+    /* Hide progress indicator on mobile */
+    .timeline-progress {
+        display: none !important;
     }
 }
 
 @media (max-width: 480px) {
     html {
-        font-size: 12px; /* Further adjust base font size for very small screens */
+        font-size: 12px;
     }
     
     .navigation-bar {
         top: 0.5rem;
-        width: 50vw;
+        width: 85vw;
+        padding: 0.3rem;
     }
 
     nav ul {
-        gap: 0.25rem;
+        gap: 0.2rem;
+        padding: 0.3rem;
     }
 
     nav a {
         padding: 0.4rem 0.6rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     .about-section {
-        padding: 2rem 5%;
+        padding: 2rem 3%;
     }
 
     .about h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .about span {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .about .hi {
@@ -1303,28 +1441,148 @@ footer {
 
     .about .cursor,
     .about .text {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .about p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .image-container img {
         width: 70vw;
+        max-width: 200px;
+    }
+
+    .scramble-text {
+        font-size: 1.4rem;
+    }
+
+    /* Panel adjustments for very small screens */
+    .panel {
+        padding: 1rem 3%;
+        min-height: 90vh;
+    }
+
+    .panel-title {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .panel-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .tag {
+        font-size: 0.6rem;
+        padding: 0.4rem 0.6rem;
     }
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 0.4rem;
+    }
+
+    .skill-item {
+        font-size: 0.5rem;
+        padding: 0.5rem 0.2rem;
+        min-height: 50px;
+    }
+
+    .principle {
+        padding: 0.8rem;
+    }
+
+    .principle h4 {
+        font-size: 1rem;
+    }
+
+    .principle p {
+        font-size: 0.75rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .timeline-year {
+        font-size: 1.2rem;
+    }
+
+    .timeline-title {
+        font-size: 1rem;
+    }
+
+    .timeline-description {
+        font-size: 0.8rem;
+    }
+
+    .contact-item {
+        padding: 0.8rem;
+        max-width: 280px;
+    }
+
+    .contact-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-item p {
+        font-size: 0.9rem;
+    }
+
+    .photo-panel {
+        height: 70vh;
+        min-height: 350px;
+    }
+
+    .photo-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .photo-content p {
+        font-size: 0.8rem;
+    }
+
+    .die {
+        width: 60px;
+        height: 200px;
+    }
+
+    .face {
+        font-size: 1.2rem !important;
     }
     
     footer {
-        padding: 1rem 5%;
+        padding: 1rem 3%;
     }
 
     footer p {
         font-size: 0.7rem;
         margin: 0.3rem 0;
+    }
+
+    .map-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .experience-map {
+        padding: 2rem 3% 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 3%;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .vertical-transition-container {
+        padding: 1rem 3%;
+    }
+
+    .panel-6 {
+        padding: 1rem 3%;
     }
 }
