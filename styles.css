@@ -220,7 +220,7 @@ header {
 
 .about p {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(1.375rem, 2vw, 2.2rem); /* Made more responsive */
+    font-size: clamp(1.3rem, 2vw, 2rem); /* Made more responsive */
     color: rgb(0, 0, 0);
 }
 
