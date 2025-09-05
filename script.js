@@ -191,7 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Start everything when page loads
     window.addEventListener('load', startLoader);
 
 
@@ -621,7 +620,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-autobhasha')) {
                 // Skills animation
                 const skillItems = panel.querySelectorAll('.skill-item');
-                gsap.set(skillItems, { opacity: 0, y: 30 });
+                gsap.set(skillItems, { opacity: 1, y: 0 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -631,10 +630,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         gsap.to(skillItems, {
                             opacity: 1,
                             y: 0,
-                            duration: 0.6,
-                            stagger: 0.1,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.3,
-                            ease: "back.out(1.7)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -642,7 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-sams')) {
                 // Skills animation
                 const skillItems = panel.querySelectorAll('.skill-item');
-                gsap.set(skillItems, { opacity: 0, y: 30 });
+                gsap.set(skillItems, { opacity: 1, y: 0 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -652,10 +651,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         gsap.to(skillItems, {
                             opacity: 1,
                             y: 0,
-                            duration: 0.6,
-                            stagger: 0.1,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.3,
-                            ease: "back.out(1.7)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -664,7 +663,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-tetris')) {
                 // Skills animation
                 const skillItems = panel.querySelectorAll('.skill-item');
-                gsap.set(skillItems, { opacity: 0, y: 30 });
+                gsap.set(skillItems, { opacity: 1, y: 0 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -674,10 +673,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         gsap.to(skillItems, {
                             opacity: 1,
                             y: 0,
-                            duration: 0.6,
-                            stagger: 0.1,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.3,
-                            ease: "back.out(1.7)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -686,7 +685,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-globe')) {
                 // Skills animation
                 const skillItems = panel.querySelectorAll('.skill-item');
-                gsap.set(skillItems, { opacity: 0, y: 30 });
+                gsap.set(skillItems, { opacity: 1, y: 0 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -696,10 +695,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         gsap.to(skillItems, {
                             opacity: 1,
                             y: 0,
-                            duration: 0.6,
-                            stagger: 0.1,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.3,
-                            ease: "back.out(1.7)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -708,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-2')) {
                 // Skills animation
                 const skillItems = panel.querySelectorAll('.skill-item');
-                gsap.set(skillItems, { opacity: 0, y: 30 });
+                gsap.set(skillItems, { opacity: 1, y: 0 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -718,10 +717,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         gsap.to(skillItems, {
                             opacity: 1,
                             y: 0,
-                            duration: 0.6,
-                            stagger: 0.1,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.3,
-                            ease: "back.out(1.7)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -730,7 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.classList.contains('panel-4')) {
                 // Philosophy animation
                 const principles = panel.querySelectorAll('.principle');
-                gsap.set(principles, { opacity: 0, scale: 0.8, y: 40 });
+                gsap.set(principles, { opacity: 1, scale: 0.8, y: 1 });
                 
                 ScrollTrigger.create({
                     trigger: panel,
@@ -741,10 +740,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             opacity: 1,
                             scale: 1,
                             y: 0,
-                            duration: 0.7,
-                            stagger: 0.15,
+                            duration: 0.4,
+                            stagger: 0.05,
                             delay: 0.4,
-                            ease: "back.out(1.4)"
+                            ease: "power2.out"
                         });
                     }
                 });
@@ -894,8 +893,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gsap.to(item, {
                     opacity: 1,
                     y: 0,
-                    duration: 1,
-                    ease: "power3.out"
+                    duration: 0.6,
+                    ease: "power2.out"
                 });
                 
                 // Animate marker with bounce effect
@@ -967,13 +966,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: ".contact-section",
-                    start: "top 70%"
+                    start: "top 80%",
+                    onEnter: () => {
+                        gsap.to(".contact-section", { opacity: 1, duration: 0.5 });
+                    }
                 }
-            }
-        );
-        
+        });
     });
-    
+
     // Smooth scrolling for navigation
     document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -983,7 +983,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (targetElement) {
                 gsap.to(window, {
-                    duration: 1.5,
+                    duration: 0.3,
                     scrollTo: {
                         y: targetElement,
                         offsetY: 80
@@ -1144,7 +1144,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, '-=0.5')
         .set('body', { overflow: 'auto' });
         
-    // Initialize smooth scrollbar if needed
     ScrollTrigger.addEventListener("refresh", () => gsap.set("#home", {y: 0}));
     
     // Refresh ScrollTrigger after everything is loaded
