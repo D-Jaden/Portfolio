@@ -608,7 +608,7 @@ header {
 .photo-content {
     position: absolute;
     bottom: 2px;
-    left: 26.5%;
+    left: 24%;
     transform: translateX(-50%);
     width: min(62.5rem, 90%);
     text-align: center;
