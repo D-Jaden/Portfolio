@@ -1,4 +1,3 @@
-/* Base font size for rem calculations */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -36,7 +35,7 @@ body {
         linear-gradient(75deg, #0fcfff, #1466ff) border-box;
     backdrop-filter: blur(15px);
     z-index: 1000;
-    padding: 8px 16px; /* smaller padding */
+    padding: 6px 12px; 
 }
 
 nav ul {
@@ -205,7 +204,7 @@ header {
 
 .about .box {
     position: absolute;
-    bottom: 38%;
+    bottom: 35%;
     display: inline-block;
     background: linear-gradient(45deg, rgb(18, 147, 212), rgb(45, 124, 214));
     border-radius: 5px;
@@ -220,7 +219,7 @@ header {
 
 .about p {
     font-family: 'WDXL Lubrifont TC', monospace;
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.3rem);
     color: rgb(0, 0, 0);
 }
 
@@ -505,7 +504,7 @@ header {
 
 .panel-6 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -596,10 +595,10 @@ header {
     text-align: center;
     opacity: 0;
     transform: translate(-50%, 50px);
-    transition: all 0.8s ease;
+    transition: all 0.6s ease;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    padding: 1.875rem;
+    padding: 16px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -663,7 +662,7 @@ header {
     content: '';
     position: absolute;
     width: 4px;
-    background: linear-gradient(to bottom, #278cff, #4463ff, #6338ff);
+    background: linear-gradient(to bottom, #278cff, #4463ff, #4c38ff);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -885,33 +884,33 @@ footer {
 /*=================================*/
 .pov {
     width: 100%;
-    height: 100vh;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 0;
+    top: 50px;
 }
 
 .die {
-    width: 6.25rem;
-    height: 6.875rem;
-    padding-bottom: 0.625rem;
+    width: 10%;
+    height: 90%;
+    padding-bottom: 20%;
     perspective: 1000px;
 }
 
 .cube {
     position: absolute;
-    width: 100%;
-    height: 6vh;
+    width: 10%;
+    height: 50%;
     transform-style: preserve-3d;
     font-family: "Bodoni Modo SC";
 }
 
 .face {
     position: absolute;
-    width: 100%;
-    height: 500%;
+    width: 10%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -932,16 +931,16 @@ footer {
     }
     
     .navigation-bar {
-        top: 1rem;
+        top: 2%;
         border-radius: 10px;
-        padding: 0.5rem;
-        width: 70vw;
+        padding: 2%;
+        width: 40%;
         height: 5%;
     }
 
     nav ul {
-        gap: 0.5rem;
-        padding: 0.5rem;
+        gap: 1%;
+        padding: 10px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1122,6 +1121,46 @@ footer {
         margin-bottom: 0.5rem;
     }
 
+    .panel-1 {
+    background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
+    }
+
+    .panel-autobhasha {
+        background: linear-gradient(180deg, #0077b6, #023e8a);
+    }
+
+    .panel-sams {
+        background: linear-gradient(180deg, #023e8a, #0077b6);
+    }
+
+    .panel-tetris {
+        background: linear-gradient(180deg, #0077b6, #023e8a);
+    }
+
+    .panel-pokeguide {
+        background: linear-gradient(180deg, #023e8a, #005cd3);
+    }
+
+    .panel-globe {
+        background: linear-gradient(180deg, #005cd3, rgb(49, 113, 181));
+    }
+
+    .panel-2 {
+        background: linear-gradient(180deg, rgb(49, 113, 181), rgb(49, 84, 188));
+    }
+
+    .panel-4 {
+        background: linear-gradient(180deg, rgb(49, 84, 188), rgb(53, 87, 222));
+    }
+
+    .panel-5 {
+        background: linear-gradient(180deg, rgb(53, 87, 222), rgb(48, 91, 172));
+    }
+
+    .vertical-transition-container {
+        background: linear-gradient(180deg, rgb(53, 87, 222), rgba(102, 154, 180));
+    }
+
     .project-tags {
         display: flex;
         justify-content: center;
@@ -1265,24 +1304,24 @@ footer {
 
     .contact-section {
         padding: 3rem 5%;
-        min-height: 100vh;  /* Ensure it takes full viewport height */
-        position: relative;  /* Fix positioning issues */
-        z-index: 10;  /* Bring it above other elements */
-        overflow: visible !important;  /* Prevent clipping */
+        min-height: 100vh;  
+        position: relative;  
+        z-index: 10; 
+        overflow: visible !important;  
     }
 
     .contact-info {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        width: 100%;  /* Ensure full width */
-        padding: 0;  /* Remove extra padding that might cause overflow */
+        width: 100%;
+        padding: 0;  
     }
 
     .contact-item {
-        width: 90%;  /* Slightly narrower to avoid edges */
+        width: 90%;  
         max-width: none;
-        margin: 0 auto;  /* Center properly */
+        margin: 0 auto; 
     }
 
     .contact-item h3 {
@@ -1406,29 +1445,35 @@ footer {
     }
     
     .navigation-bar {
-        top: 0.5rem;
-        width: 50vw;
+        top: 1%;
+        width: 50%;
     }
 
     nav ul {
-        gap: 0.25rem;
+        gap: 1%;
     }
 
     nav a {
-        padding: 0.4rem 0.6rem;
+        padding: 10px 20px;
         font-size: 0.8rem;
     }
-    
+    .scramble-text {
+        position:absolute;
+        top:10%;
+    }
+
     .about-section {
-        padding: 2rem 3%;
+        padding: 2px 6px;
+        position:absolute;
+        top:20%;
     }
 
     .about h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about .hi {
@@ -1442,32 +1487,72 @@ footer {
     }
 
     .about p {
-        font-size: 0.7rem;
+        font-size: 0.4rem;
+    }
+    .panel-1 {
+    background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
     }
 
+    .panel-autobhasha {
+        background: linear-gradient(180deg, #0077b6, #023e8a);
+    }
+
+    .panel-sams {
+        background: linear-gradient(180deg, #023e8a, #0077b6);
+    }
+
+    .panel-tetris {
+        background: linear-gradient(180deg, #0077b6, #023e8a);
+    }
+
+    .panel-pokeguide {
+        background: linear-gradient(180deg, #023e8a, #005cd3);
+    }
+
+    .panel-globe {
+        background: linear-gradient(180deg, #005cd3, rgb(49, 113, 181));
+    }
+
+    .panel-2 {
+        background: linear-gradient(180deg, rgb(49, 113, 181), rgb(49, 84, 188));
+    }
+
+    .panel-4 {
+        background: linear-gradient(180deg, rgb(49, 84, 188), rgb(53, 87, 222));
+    }
+
+    .panel-5 {
+        background: linear-gradient(180deg, rgb(53, 87, 222), rgb(48, 91, 172));
+    }
+
+    .vertical-transition-container {
+        background: linear-gradient(180deg, rgb(53, 87, 222), rgba(102, 154, 180));
+    }
     .horizontal-content {
-        display: flex;  /* Change from block to flex for better control */
-        flex-direction: column;  /* Stack vertically */
-        width: 100%;  /* Override max-content */
+        display: flex;  
+        flex-direction: column;  
+        width: 100%;  
         height: auto;
     }
+    .photo-panel-inner {
+        aspect-ratio: 5/9;
+    }
     .image-container img {
-        width: 70vw;
-        max-width: 200px;
+        width: 50%;
+        max-width: 70%;
     }
 
     .scramble-text {
         font-size: 1.4rem;
     }
 
-    /* Panel adjustments for very small screens */
     .panel {
-        padding: 1rem 3%;
-        min-height: 90vh;
+        padding: 14px 14px;
+        min-height: 60%;
     }
 
     .panel-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 0.8rem;
     }
 
@@ -1556,12 +1641,12 @@ footer {
     }
     
     footer {
-        padding: 1rem 3%;
+        padding: 12px 14px;
     }
 
     footer p {
         font-size: 0.7rem;
-        margin: 0.3rem 0;
+        margin: 12%;
     }
 
     .map-title {
