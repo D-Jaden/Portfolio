@@ -1,3 +1,4 @@
+/* Base font size for rem calculations */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -1523,7 +1524,7 @@ footer {
     
     .navigation-bar {
         top: 1%;
-        width: 50%;
+        width: 90%;
     }
 
     nav ul {
@@ -1536,13 +1537,13 @@ footer {
     }
     .scramble-text {
         position:absolute;
-        top:10%;
+        top:20%;
     }
 
     .about-section {
         padding: 2px 6px;
         position:absolute;
-        top:20%;
+        bottom:2%;
     }
 
     .about h2 {
@@ -1564,7 +1565,7 @@ footer {
     }
 
     .about p {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
     .panel-1 {
     background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
@@ -1716,7 +1717,9 @@ footer {
     .face {
         font-size: 1.2rem !important;
     }
-    
+    .timeline-description {
+        font-size: 0.6rem;
+    }
     footer {
         padding: 12px 14px;
     }
