@@ -1520,6 +1520,11 @@ footer {
         font-size: 12px;
         overflow-x: hidden !important;
     }
+    .image-container img {
+        width: 40%;
+        max-width: 60%;
+        height:auto;
+    }   
     .hello-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
         font-size: 2rem;
