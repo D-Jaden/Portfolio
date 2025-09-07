@@ -1536,7 +1536,7 @@ footer {
     }
     .progress-container {
         position: absolute;
-        bottom: 420px;
+        bottom: 200px;
         left: 50%;
         transform: translateX(-50%);
         width: 200px;
@@ -1556,22 +1556,22 @@ footer {
     }
 
     nav ul {
-        gap: 0.6%;
+        gap: 0.2%;
     }
 
     nav a {
-        padding: 10px 15px;
-        font-size: 0.6rem;
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
     .scramble-text {
         position:absolute;
-        top:50%;
+        bottom:5%;
     }
 
     .about-section {
         padding: 2px 6px;
         position:absolute;
-        bottom:6%;
+        bottom:20%;
     }
 
     .about h2 {
