@@ -1520,29 +1520,58 @@ footer {
         font-size: 12px;
         overflow-x: hidden !important;
     }
+    .hello-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    .hello-text.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .language-indicator {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: 180;
+    }
+    .progress-container {
+        position: absolute;
+        bottom: 420px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 2px;
+    }
+    .progress-bar {
+        height: 100%;
+        background: #3745dc;
+        width: 0%;
+        border-radius: 1px;
+        transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
     
     .navigation-bar {
         top: 1%;
-        width: 90%;
+        width: 60%;
     }
 
     nav ul {
-        gap: 1%;
+        gap: 0.6%;
     }
 
     nav a {
-        padding: 10px 20px;
-        font-size: 0.8rem;
+        padding: 10px 15px;
+        font-size: 0.6rem;
     }
     .scramble-text {
         position:absolute;
-        top:20%;
+        top:50%;
     }
 
     .about-section {
         padding: 2px 6px;
         position:absolute;
-        bottom:2%;
+        bottom:6%;
     }
 
     .about h2 {
@@ -1671,11 +1700,11 @@ footer {
     }
 
     .timeline-year {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .timeline-title {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .timeline-description {
