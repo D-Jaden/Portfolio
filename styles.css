@@ -1572,7 +1572,7 @@ footer {
     nav ul {
         list-style-type: none;
         display: flex;
-        padding: 0;
+        padding: 1px 1px;
         gap: 5px;
     }
     nav li {
@@ -1672,6 +1672,8 @@ footer {
 
     .scramble-text {
         font-size: 1.4rem;
+        position:absolute;
+        top:75%;
     }
 
     .panel {
