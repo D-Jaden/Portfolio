@@ -1541,7 +1541,7 @@ footer {
     }
     .progress-container {
         position: absolute;
-        bottom: 50%;
+        bottom: 45%;
         left: 50%;
         transform: translateX(-50%);
         width: 200px;
@@ -1566,14 +1566,14 @@ footer {
     nav ul {
         list-style-type: none;
         display: flex;
-        padding: 1px 12px;
-        gap: 2px;
+        padding: 1px 1px;
+        gap: 1px;
     }
     nav li {
         margin: 0;
     }
     nav a {
-        padding: 1px 5px;
+        padding: 1px 10px;
         font-size: 0.8rem;
         border-radius: 3px;
         position: relative;
@@ -1581,13 +1581,13 @@ footer {
     }
     .scramble-text {
         position:absolute;
-        bottom:50%;
+        bottom:90%;
     }
 
     .about-section {
         padding: 2px 6px;
         position:absolute;
-        bottom:5%;
+        top:2%;
     }
 
     .about h2 {
@@ -1612,7 +1612,7 @@ footer {
         font-size: 0.6rem;
     }
     .panel-1 {
-    background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
+        background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
     }
 
     .panel-autobhasha {
@@ -1620,27 +1620,27 @@ footer {
     }
 
     .panel-sams {
-        background: linear-gradient(180deg, #023e8a, #0077b6);
+        background: linear-gradient(270deg, #023e8a, #0077b6);
     }
 
     .panel-tetris {
-        background: linear-gradient(180deg, #0077b6, #023e8a);
+        background: linear-gradient(270deg, #0077b6, #023e8a);
     }
 
     .panel-pokeguide {
-        background: linear-gradient(180deg, #023e8a, #005cd3);
+        background: linear-gradient(270deg, #023e8a, #005cd3);
     }
 
     .panel-globe {
-        background: linear-gradient(180deg, #005cd3, rgb(49, 113, 181));
+        background: linear-gradient(270deg, #005cd3, rgb(49, 113, 181));
     }
 
     .panel-2 {
-        background: linear-gradient(180deg, rgb(49, 113, 181), rgb(49, 84, 188));
+        background: linear-gradient(270deg, rgb(49, 113, 181), rgb(49, 84, 188));
     }
 
     .panel-4 {
-        background: linear-gradient(180deg, rgb(49, 84, 188), rgb(53, 87, 222));
+        background: linear-gradient(270deg, rgb(49, 84, 188), rgb(53, 87, 222));
     }
 
     .panel-5 {
