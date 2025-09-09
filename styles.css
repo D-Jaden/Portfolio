@@ -1751,11 +1751,13 @@ footer {
     .photo-panel {
         height: 50%;
         min-height: 45%;
+        max-width: 100%;
+        width:90%;
     }
     .photo-panel-inner {
         max-height: 50%;
-        max-width: 50%;
-        width:45%;
+        max-width: 100%;
+        width:90%;
         height: auto;
     }
     .photo-content h3 {
@@ -1807,7 +1809,7 @@ footer {
         margin-top: 0;
     }
     footer {
-    padding: 8px 14px;  
+        padding: 8px 14px;  
     }
 
     footer p {
