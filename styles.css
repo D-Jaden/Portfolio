@@ -1586,8 +1586,8 @@ footer {
         overflow: hidden;
     }
     .scramble-wrapper {
-        position:relative;
-        top:20%;
+        position:absolute;
+        top:75%;
     }
 
     .about-section {
