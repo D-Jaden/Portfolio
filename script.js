@@ -874,8 +874,28 @@ document.addEventListener('DOMContentLoaded', () => {
     photoPanels.forEach(panel => {
         observer.observe(panel);
     });
-    
+
     // Timeline animations
+    
+    gsap.fromTo(".map-title h2", 
+        {
+            opacity: 0,
+            y: 80,
+            scale: 0.8
+        },
+        {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".map-title",
+                start: "top 80%"
+            }
+        }
+    );
+    
     gsap.utils.toArray('.timeline-item').forEach((item, index) => {
         const marker = item.querySelector('.timeline-marker');
         const content = item.querySelector('.timeline-content');
