@@ -1521,14 +1521,14 @@ footer {
         overflow-x: hidden !important;
     }
     .image-container{
-        width: 36%;
-        max-width: 35%;
-        height:30%;
+        width: 50%;
+        max-width: 50%;
+        height:50%;
     }
     .img{
-        width: 36%;
-        max-width: 35%;
-        height:30%;
+        width: 56%;
+        max-width: 50%;
+        height:50%;
     }   
     .hello-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
@@ -1563,8 +1563,8 @@ footer {
     .navigation-bar {
         top: 1%;
         width: 74%;
-        height:10%;
-        border-radius:30px;
+        height:3%;
+        border-radius:50px;
         z-index: 1000;
         padding: 1px 15px; 
     }
@@ -1752,12 +1752,12 @@ footer {
         height: 50%;
         min-height: 45%;
         max-width: 100%;
-        width:90%;
+        width:100%;
     }
     .photo-panel-inner {
         max-height: 50%;
         max-width: 100%;
-        width:90%;
+        width:100%;
         height: auto;
     }
     .photo-content h3 {
