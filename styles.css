@@ -1521,14 +1521,18 @@ footer {
         overflow-x: hidden !important;
     }
     .image-container{
-        width: 50%;
-        max-width: 50%;
-        height:50%;
+        width: 80%;
+        max-width: 80%;
+        height:80%;
+        align-items: center;
+        justify-content: center;
     }
     .img{
-        width: 56%;
-        max-width: 50%;
-        height:50%;
+        width: 80%;
+        max-width: 80%;
+        height:80%;
+        align-items: center;
+        justify-content: center;
     }   
     .hello-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
