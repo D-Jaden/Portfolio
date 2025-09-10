@@ -1763,6 +1763,7 @@ footer {
         max-width: 100%;
         width:100%;
         height: auto;
+        padding:3px;
     }
     .photo-content h3 {
         font-size: 1.2rem;
