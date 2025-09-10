@@ -1562,7 +1562,7 @@ footer {
     
     .navigation-bar {
         top: 1%;
-        width: 74%;
+        width: 72%;
         height:3%;
         border-radius:50px;
         z-index: 1000;
@@ -1580,7 +1580,7 @@ footer {
     }
     nav a {
         padding: 1px 4px;
-        font-size:1rem;
+        font-size:0.8rem;
         border-radius: 3px;
         position: relative;
         overflow: hidden;
