@@ -876,7 +876,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Timeline animations
-    
+
     gsap.fromTo(".map-title h2", 
         {
             opacity: 0,
@@ -890,7 +890,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 1.2,
             ease: "power3.out",
             scrollTrigger: {
-                trigger: ".map-title",
+                trigger: ".experience-section",
                 start: "top 80%"
             }
         }
