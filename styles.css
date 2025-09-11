@@ -1524,11 +1524,17 @@ footer {
         width: 90%;
         max-width: 90%;
         height:90%;
+        position:absolute;
+        left:50%;
+        right:50%;
     }
     .img{
         width: 90%;
         max-width: 90%;
         height:90%;
+        position:absolute;
+        left:50%;
+        right:50%;
     }   
     .hello-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
@@ -1574,15 +1580,15 @@ footer {
         list-style-type: none;
         display: flex;
         padding: 1px 1px;
-        gap: 5px;
+        gap: 3px;
     }
     nav li {
         margin: 0;
     }
     nav a {
         padding: 1px 4px;
-        font-size:1rem;
-        border-radius: 3px;
+        font-size:0.9rem;
+        border-radius: 2.5px;
         position: relative;
         overflow: hidden;
     }
@@ -1616,7 +1622,7 @@ footer {
     }
 
     .about p {
-        font-size: 2%;
+        font-size: 18%;
     }
     .panel-1 {
         background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
