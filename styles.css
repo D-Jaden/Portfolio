@@ -1524,7 +1524,7 @@ footer {
         width: 90%;
         max-width: 90%;
         height:90%;
-        position:absolute;
+        position:relative;
         left:50%;
         right:50%;
     }
@@ -1532,9 +1532,6 @@ footer {
         width: 90%;
         max-width: 90%;
         height:90%;
-        position:absolute;
-        left:50%;
-        right:50%;
     }   
     .hello-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
@@ -1569,7 +1566,7 @@ footer {
     .navigation-bar {
         top: 1%;
         max-width: 80%;
-        width: 70%;
+        width: 66%;
         height:3.5%;
         border-radius:50px;
         z-index: 1000;
@@ -1622,7 +1619,7 @@ footer {
     }
 
     .about p {
-        font-size: 18%;
+        font-size: 50%;
     }
     .panel-1 {
         background: linear-gradient(180deg, rgba(102, 154, 180), #0077b6);
@@ -1764,7 +1761,7 @@ footer {
     .photo-panel-inner {
         max-height: 50%;
         max-width: 100%;
-        width:100%;
+        width:70%;
         height: auto;
     }
     .photo-content h3 {
